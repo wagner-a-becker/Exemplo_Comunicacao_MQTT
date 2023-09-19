@@ -72,10 +72,10 @@ client.on_message = on_message
 client.on_publish = on_publish
 
 # Inscreve em todos os topicos do esp32 usando o wildcard "#"
-client.subscribe("esp32/#", qos=1)
+client.subscribe("D0-37-45-E8-58-3F/#", qos=1)
 
 # Uma unica publicacao, isso tambem pode ser feito em loops, etc.
-client.publish("esp32/working", payload="yes", qos=1)
+#client.publish("esp32/working", payload="yes", qos=1)
 
 # loop_forever para simplicidade, aqui voce precisa parar o loop manualmente
 # voce tambem pode usar loop_start e loop_stop
